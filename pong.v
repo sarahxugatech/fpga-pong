@@ -109,7 +109,8 @@ module pong #(
                     end
                     ball_x <= W / 2;
                     ball_y <= H / 2;
-                    vx     <= score_p1 ? -1 : 1;
+                    // serve toward the player who missed (loser receives)
+                    vx     <= score_p1 ? 1 : -1;
                     vy     <= 1;
                 end else begin
                     ball_x <= nx[9:0];

@@ -32,7 +32,7 @@ pong #(.W(64), .H(32), .PADDLE_H(6), .WIN_SCORE(5), .TICKS_PER_MOVE(10)) ...
 
 ```bash
 # install: sudo apt-get install iverilog
-iverilog -o pong_tb pong.v pong_tb.v && vvp pong_tb
+iverilog -g2012 -o pong_tb pong.v pong_tb.v && vvp pong_tb
 ```
 
 ## Roadmap
